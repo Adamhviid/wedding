@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.1em;
+  
+  /* color: #6495ED; */
+}
+
+body {
+  background: #f9f6f1;
+  font-family: Georgia, serif;
+}
+
+.container {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  padding: 2rem;
+}
+
+.container h3 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 1rem;
+}
+
+.container hr {
+  width: 40%;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.mainPhoto {
+  width: 100%;
+  display: block;
+  margin-top: 1.5rem;
+}
