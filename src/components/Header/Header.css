@@ -29,6 +29,29 @@ nav a:hover {
   color: #111;
 }
 
+.title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.locale-toggle {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-family: Georgia, serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: #555;
+  cursor: pointer;
+}
+
+.locale-toggle:hover {
+  border-color: #888;
+  color: #111;
+}
+
 .hamburger {
   display: none;
 }

@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useLocale } from "../../loc/useLocale";
+
 function CountDown() {
   const [date] = useState<Date>(new Date("2027-03-11"));
   const today = new Date();
+
+  const t = useLocale();
 
   const calculateDaysBetween = () => {
     const diffMs = date.getTime() - today.getTime();
@@ -10,7 +14,9 @@ function CountDown() {
 
   return (
     <div>
-      <p>{calculateDaysBetween()} days to go!</p>
+      <p>
+        {calculateDaysBetween()} {t.countdownDaysToGo}
+      </p>
     </div>
   );
 }

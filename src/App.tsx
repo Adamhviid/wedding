@@ -1,22 +1,25 @@
+import { useState } from "react";
 import "./App.css";
 import weddingPhoto from "./assets/JustMarried.jpg";
-// import SaveTheDate from "./assets/SaveTheDate.jpeg";
-
+import Header from "./components/Header/Header";
 import CountDown from "./components/CountDown/CountDown";
+import { LocaleContext, useLocale, type Locale } from "./loc/useLocale";
 
-function App() {
+function AppContent() {
+  const t = useLocale();
+
   return (
     <div className="container">
       <div>
-        <h1>Adam & Amy</h1>
-        <h3>{}27 marts 2027</h3>
+        <h1>{t.mainTitle}</h1>
+        <h3>{t.mainDate}</h3>
       </div>
 
       <hr />
 
       <div>
-        <h3>The Grand Hotel</h3>
-        <p>Taipei, Taiwan</p>
+        <h3>{t.mainHotel}</h3>
+        <p>{t.mainLocation}</p>
       </div>
 
       <hr />
@@ -24,8 +27,18 @@ function App() {
       <CountDown />
 
       <img src={weddingPhoto} alt="Adam and Amy" className="mainPhoto" />
-      {/* <img src={SaveTheDate} alt="Save The Date" className="mainPhoto" /> */}
     </div>
+  );
+}
+
+function App() {
+  const [locale, setLocale] = useState<Locale>("en");
+
+  return (
+    <LocaleContext.Provider value={{ locale, setLocale }}>
+      <Header />
+      <AppContent />
+    </LocaleContext.Provider>
   );
 }
 
