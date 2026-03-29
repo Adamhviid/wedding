@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { LocaleContext, useLocale } from "../../loc/useLocale";
 import "./Header.css";
 
@@ -12,7 +13,9 @@ function Header() {
   return (
     <header>
       <div className="title-row">
-        <h1>Adam & Amy</h1>
+        <h1>
+          <Link to="/">Adam & Amy</Link>
+        </h1>
         <button className="locale-toggle" onClick={toggleLocale}>
           {locale === "en" ? "中文" : "EN"}
         </button>
@@ -23,7 +26,7 @@ function Header() {
         <span />
       </button>
       <nav className={open ? "open" : ""}>
-        <a href="#">{t.headerPhotos}</a>
+        <Link to="/photos">{t.headerPhotos}</Link>
         <a href="#">{t.headerThingsToDo}</a>
         <a href="#">{t.headerRegistry}</a>
       </nav>
