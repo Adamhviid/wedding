@@ -1,5 +1,5 @@
-import "./App.css";
 import { useLocale } from "../../loc/useLocale";
+import "./StartPage.css";
 
 import weddingPhoto from "../../assets/JustMarried.jpg";
 

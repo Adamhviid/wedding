@@ -16,19 +16,22 @@ function Header() {
         <h1>
           <Link to="/">Adam & Amy</Link>
         </h1>
+
         <button className="locale-toggle" onClick={toggleLocale}>
           {locale === "en" ? "中文" : "EN"}
         </button>
       </div>
+
       <button className="hamburger" onClick={() => setOpen(!open)}>
         <span />
         <span />
         <span />
       </button>
+
       <nav className={open ? "open" : ""}>
-        <Link to="/photos">{t.headerPhotos}</Link>
-        <a href="#">{t.headerThingsToDo}</a>
-        <a href="#">{t.headerRegistry}</a>
+        <Link to="/photos" onClick={() => setOpen(false)}>{t.headerPhotos}</Link>
+        <Link to="/thingsToDo" onClick={() => setOpen(false)}>{t.headerThingsToDo}</Link>
+        <Link to="/registry" onClick={() => setOpen(false)}>{t.headerRegistry}</Link>
       </nav>
     </header>
   );

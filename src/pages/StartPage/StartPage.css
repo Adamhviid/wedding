@@ -1,27 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  letter-spacing: 0.1em;
-  
-  /* color: #6495ED; */
-}
-
-body {
-  background: #f9f6f1;
-  font-family: Georgia, serif;
-}
-
-.container {
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .container h1 {
   font-size: 3rem;
   letter-spacing: 0.1em;
-  padding: 2rem;
 }
 
 .container h3 {
