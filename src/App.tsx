@@ -2,7 +2,7 @@ import "./App.css";
 import weddingPhoto from "./assets/JustMarried.jpg";
 // import SaveTheDate from "./assets/SaveTheDate.jpeg";
 
-import CountDown from "./components/CountDown";
+import CountDown from "./components/CountDown/CountDown";
 
 function App() {
   return (

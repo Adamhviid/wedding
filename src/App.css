@@ -43,3 +43,9 @@ body {
   display: block;
   margin-top: 1.5rem;
 }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}
