@@ -1,6 +1,7 @@
 import { useLocale } from "../../loc/useLocale";
 
-const SURVEY_URL = ""; // Replace with your Google Survey embed URL
+const SURVEY_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSf0ZrLBQ3ksuQ5KnqnubixKlNN7h_VGcGARBh_wQpwnq-ertA/viewform?usp=publish-editor"; // Replace with your Google Survey embed URL
 
 function Survey() {
   const t = useLocale();
