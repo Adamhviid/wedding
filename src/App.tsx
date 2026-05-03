@@ -6,6 +6,8 @@ import "./App.css";
 import Header from "./pages/Header/Header";
 import StartPage from "./pages/StartPage/StartPage";
 import Photos from "./pages/Photos/Photos";
+import Information from "./pages/Information/Information";
+import Registry from "./pages/Registry/Registry";
 
 function App() {
   const [locale, setLocale] = useState<Locale>("en");
@@ -18,8 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<StartPage />} />
             <Route path="/photos" element={<Photos />} />
-            <Route path="/thingsToDo" element={<StartPage />} />
-            <Route path="/registry" element={<StartPage />} />
+            <Route path="/information" element={<Information />} />
+            <Route path="/registry" element={<Registry />} />
           </Routes>
         </div>
       </BrowserRouter>

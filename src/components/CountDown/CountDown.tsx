@@ -15,7 +15,7 @@ function CountDown() {
   return (
     <div>
       <p>
-        {calculateDaysBetween()} {t.countdownDaysToGo}
+        {calculateDaysBetween()} {t.mainCountdownDaysToGo}
       </p>
     </div>
   );

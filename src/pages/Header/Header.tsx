@@ -29,9 +29,15 @@ function Header() {
       </button>
 
       <nav className={open ? "open" : ""}>
-        <Link to="/photos" onClick={() => setOpen(false)}>{t.headerPhotos}</Link>
-        <Link to="/thingsToDo" onClick={() => setOpen(false)}>{t.headerThingsToDo}</Link>
-        <Link to="/registry" onClick={() => setOpen(false)}>{t.headerRegistry}</Link>
+        <Link to="/photos" onClick={() => setOpen(false)}>
+          {t.headerPhotos}
+        </Link>
+        <Link to="/information" onClick={() => setOpen(false)}>
+          {t.headerInformation}
+        </Link>
+        <Link to="/registry" onClick={() => setOpen(false)}>
+          {t.headerRegistry}
+        </Link>
       </nav>
     </header>
   );
