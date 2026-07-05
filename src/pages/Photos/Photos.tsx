@@ -3,6 +3,7 @@ import Lightbox from "yet-another-react-lightbox";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "yet-another-react-lightbox/styles.css";
 import "react-photo-album/rows.css";
+import "./Photos.css";
 
 type Photo = { src: string; width: number; height: number };
 
@@ -59,14 +60,25 @@ function Photos() {
     });
   }, []);
 
+  const loaded = photos.length >= filenames.length;
+
   return (
     <div>
-      <RowsPhotoAlbum
-        photos={photos}
-        targetRowHeight={150}
-        render={{ image: (props) => <img {...props} loading="lazy" /> }}
-        onClick={({ index: current }: { index: number }) => setIndex(current)}
-      />
+      {!loaded && (
+        <div className="skeleton-grid">
+          {filenames.map((name) => (
+            <div key={name} className="skeleton-item" />
+          ))}
+        </div>
+      )}
+      {loaded && (
+        <RowsPhotoAlbum
+          photos={photos}
+          targetRowHeight={150}
+          render={{ image: (props) => <img {...props} loading="lazy" /> }}
+          onClick={({ index: current }: { index: number }) => setIndex(current)}
+        />
+      )}
       <Lightbox
         index={index}
         slides={slides}

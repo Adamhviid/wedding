@@ -8,7 +8,7 @@
   "headerPhotos": "Photos",
   "headerInformation": "Information",
   "headerSurvey": "Survey",
-  "headerRegistry": "Registry",
+  "headerRsvp": "RSVP",
 
   "infoTitle": "Information",
   "infoTabGettingHere": "Getting Here",
@@ -41,5 +41,5 @@
   "infoLinkHalalLabel": "Halal dining in Taipei",
   "infoLinkHalalDesc": "— official Taipei travel guide to halal-friendly restaurants and spots.",
   
-  "registrySurveyPlaceholder": "Survey coming soon."
+  "RsvpSurveyPlaceholder": "Survey coming soon."
 }

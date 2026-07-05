@@ -8,7 +8,7 @@
   "headerPhotos": "照片",
   "headerInformation": "旅遊資訊",
   "headerSurvey": "問卷調查",
-  "headerRegistry": "禮品登記",
+  "headerRsvp": "禮品登記",
 
   "infoTitle": "旅遊資訊",
   "infoTabGettingHere": "交通方式",
@@ -41,5 +41,5 @@
   "infoLinkHalalLabel": "台北清真飲食指南",
   "infoLinkHalalDesc": "— 台北官方旅遊網站的清真友善餐廳與景點介紹。",
 
-  "registrySurveyPlaceholder": "問卷即將推出。"
+  "RsvpSurveyPlaceholder": "問卷即將推出。"
 }

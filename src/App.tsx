@@ -7,7 +7,7 @@ import Header from "./pages/Header/Header";
 import StartPage from "./pages/StartPage/StartPage";
 import Photos from "./pages/Photos/Photos";
 import Information from "./pages/Information/Information";
-import Registry from "./pages/Registry/Registry";
+import Rsvp from "./pages/Rsvp/Rsvp";
 
 function App() {
   const [locale, setLocale] = useState<Locale>("en");
@@ -21,7 +21,7 @@ function App() {
             <Route path="/" element={<StartPage />} />
             <Route path="/photos" element={<Photos />} />
             <Route path="/information" element={<Information />} />
-            <Route path="/registry" element={<Registry />} />
+            <Route path="/rsvp" element={<Rsvp />} />
           </Routes>
         </div>
       </BrowserRouter>

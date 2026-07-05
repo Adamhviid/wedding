@@ -35,8 +35,8 @@ function Header() {
         <Link to="/information" onClick={() => setOpen(false)}>
           {t.headerInformation}
         </Link>
-        <Link to="/registry" onClick={() => setOpen(false)}>
-          {t.headerRegistry}
+        <Link to="/rsvp" onClick={() => setOpen(false)}>
+          {t.headerRsvp}
         </Link>
       </nav>
     </header>

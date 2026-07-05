@@ -1,8 +1,7 @@
 import { useLocale } from "../../loc/useLocale";
 
 const SURVEY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSf0ZrLBQ3ksuQ5KnqnubixKlNN7h_VGcGARBh_wQpwnq-ertA/viewform?usp=publish-editor"; // Replace with your Google Survey embed URL
-
+  "https://docs.google.com/forms/d/e/1FAIpQLSf0ZrLBQ3ksuQ5KnqnubixKlNN7h_VGcGARBh_wQpwnq-ertA/viewform?usp=publish-editor";
 function Survey() {
   const t = useLocale();
 
@@ -18,7 +17,7 @@ function Survey() {
         </iframe>
       ) : (
         <p style={{ color: "#888", padding: "2rem 0", textAlign: "center" }}>
-          {t.registrySurveyPlaceholder}
+          {t.RsvpSurveyPlaceholder}
         </p>
       )}
     </div>
