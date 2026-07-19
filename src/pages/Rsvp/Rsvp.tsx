@@ -2,7 +2,7 @@ import { useLocale } from "../../loc/useLocale";
 
 const SURVEY_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSf0ZrLBQ3ksuQ5KnqnubixKlNN7h_VGcGARBh_wQpwnq-ertA/viewform?usp=publish-editor";
-function Survey() {
+function Rsvp() {
   const t = useLocale();
 
   return (
@@ -24,4 +24,4 @@ function Survey() {
   );
 }
 
-export default Survey;
+export default Rsvp;

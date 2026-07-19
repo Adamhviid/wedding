@@ -5,7 +5,7 @@ import "./App.css";
 
 import Header from "./pages/Header/Header";
 import StartPage from "./pages/StartPage/StartPage";
-import Photos from "./pages/Photos/Photos";
+// import Photos from "./pages/Photos/Photos";
 import Information from "./pages/Information/Information";
 import Rsvp from "./pages/Rsvp/Rsvp";
 
@@ -19,7 +19,7 @@ function App() {
         <div className="page-content">
           <Routes>
             <Route path="/" element={<StartPage />} />
-            <Route path="/photos" element={<Photos />} />
+            {/* <Route path="/photos" element={<Photos />} /> */}
             <Route path="/information" element={<Information />} />
             <Route path="/rsvp" element={<Rsvp />} />
           </Routes>

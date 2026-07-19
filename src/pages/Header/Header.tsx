@@ -29,9 +29,9 @@ function Header() {
       </button>
 
       <nav className={open ? "open" : ""}>
-        <Link to="/photos" onClick={() => setOpen(false)}>
+        {/* <Link to="/photos" onClick={() => setOpen(false)}>
           {t.headerPhotos}
-        </Link>
+        </Link> */}
         <Link to="/information" onClick={() => setOpen(false)}>
           {t.headerInformation}
         </Link>
