@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 0.1em;
+  font-size: 1.2rem;
 }
 
 body {
   background: #f9f6f1;
   font-family: Georgia, serif;
+  font-size: 1.125rem;
   padding-bottom: 50px
 }
 

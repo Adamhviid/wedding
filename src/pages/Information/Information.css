@@ -4,6 +4,37 @@
   margin-bottom: 2rem;
 }
 
+.info-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.info-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.infoPhoto {
+  display: block;
+  flex-shrink: 0;
+  width: 350px;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .info-layout {
+    flex-direction: column-reverse;
+  }
+
+  .infoPhoto {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
 .container h2 {
   font-size: 1.4rem;
   font-weight: normal;
@@ -25,10 +56,11 @@
   letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
   color: #333;
+  font-weight: bold;
 }
 
 .info-section p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.7;
   color: #555;
 }

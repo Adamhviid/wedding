@@ -10,6 +10,9 @@
   "headerSurvey": "問卷調查",
   "headerRsvp": "禮品登記",
 
+  "rsvpTitle": "回覆邀請",
+  "rsvpIntro": "請填寫以下表單，讓我們知道您是否能出席。",
+
   "infoTitle": "旅遊資訊",
   "infoTabGettingHere": "交通方式",
   "infoTabGoodToKnow": "實用資訊",
@@ -39,7 +42,5 @@
   "infoLinkThingsTodoLabel": "台北旅遊景點推薦",
   "infoLinkThingsTodoDesc": "— 涵蓋景點、美食與街區的精選指南。",
   "infoLinkHalalLabel": "台北清真飲食指南",
-  "infoLinkHalalDesc": "— 台北官方旅遊網站的清真友善餐廳與景點介紹。",
-
-  "RsvpSurveyPlaceholder": "問卷即將推出。"
+  "infoLinkHalalDesc": "— 台北官方旅遊網站的清真友善餐廳與景點介紹。"
 }

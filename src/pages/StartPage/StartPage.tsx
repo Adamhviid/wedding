@@ -1,12 +1,18 @@
+import { useState } from "react";
 import { useLocale } from "../../loc/useLocale";
 import "./StartPage.css";
 
 import weddingPhoto from "../../assets/JustMarried.jpg";
 
-import CountDown from "../../components/CountDown/CountDown";
-
 function StartPage() {
   const t = useLocale();
+  const [date] = useState<Date>(new Date("2027-03-11"));
+  const today = new Date();
+
+  const calculateDaysBetween = () => {
+    const diffMs = date.getTime() - today.getTime();
+    return Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+  };
 
   return (
     <div className="container">
@@ -24,9 +30,23 @@ function StartPage() {
 
       <hr />
 
-      <CountDown />
+      <div>
+        {calculateDaysBetween()} {t.mainCountdownDaysToGo}
+      </div>
 
       <img src={weddingPhoto} alt="Adam and Amy" className="mainPhoto" />
+
+      <div>
+        <h2>Agenda</h2>
+        <div className="agenda">
+          <span>17:30</span>
+          <span>guest arrive</span>
+          <span>18:00</span>
+          <span>Dinner</span>
+          <span>22:00?</span>
+          <span>Afterparty</span>
+        </div>
+      </div>
     </div>
   );
 }

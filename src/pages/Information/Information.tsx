@@ -1,26 +1,36 @@
 import { useLocale } from "../../loc/useLocale";
 import "./Information.css";
 
+import verticalLookingPhoto from "../../assets/verticalLooking.jpg";
+
 function Information() {
   const t = useLocale();
 
   return (
     <div className="container">
       <h1>{t.infoTitle}</h1>
-      <div>
-        <h2>{t.infoFromAirportTitle}</h2>
+      <div className="info-layout">
+        <div className="info-text">
+          <h2>{t.infoFromAirportTitle}</h2>
 
-        <div className="info-section">
-          <h3>{t.infoMrtTitle}</h3>
-          <p>{t.infoMrtBody}</p>
+          <div className="info-section">
+            <h3>{t.infoMrtTitle}</h3>
+            <p>{t.infoMrtBody}</p>
+          </div>
+
+          <div className="info-section">
+            <h3>{t.infoUberTitle}</h3>
+            <p>{t.infoUberBody}</p>
+          </div>
         </div>
 
-        <div className="info-section">
-          <h3>{t.infoUberTitle}</h3>
-          <p>{t.infoUberBody}</p>
-        </div>
+        <img
+          src={verticalLookingPhoto}
+          alt="Adam and Amy"
+          className="infoPhoto"
+        />
       </div>
-      
+
       <div>
         <h2>{t.infoTabGoodToKnow}</h2>
         <div className="info-section">
