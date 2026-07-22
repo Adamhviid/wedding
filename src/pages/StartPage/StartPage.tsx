@@ -43,7 +43,7 @@ function StartPage() {
           <span>guest arrive</span>
           <span>18:00</span>
           <span>Dinner</span>
-          <span>22:00?</span>
+          <span>~21:00</span>
           <span>Afterparty</span>
         </div>
       </div>
