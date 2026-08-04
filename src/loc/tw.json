@@ -5,10 +5,15 @@
   "mainLocation": "台北，台灣",
   "mainCountdownDaysToGo": "天後見！",
 
+  "mainAgendaTitle": "流程",
+  "mainAgendaGuestArrive": "賓客抵達",
+  "mainAgendaDinner": "晚宴",
+  "mainAgendaAfterparty": "續攤",
+
   "headerPhotos": "照片",
   "headerInformation": "旅遊資訊",
   "headerSurvey": "問卷調查",
-  "headerRsvp": "禮品登記",
+  "headerRsvp": "出席回覆",
 
   "rsvpTitle": "出席回覆",
   "rsvpIntro": "請填寫以下表單，讓我們知道您是否能出席。",

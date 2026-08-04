@@ -37,14 +37,14 @@ function StartPage() {
       <img src={weddingPhoto} alt="Adam and Amy" className="mainPhoto" />
 
       <div>
-        <h2>Agenda</h2>
+        <h2>{t.mainAgendaTitle}</h2>
         <div className="agenda">
           <span>17:30</span>
-          <span>guest arrive</span>
+          <span>{t.mainAgendaGuestArrive}</span>
           <span>18:00</span>
-          <span>Dinner</span>
+          <span>{t.mainAgendaDinner}</span>
           <span>~21:00</span>
-          <span>Afterparty</span>
+          <span>{t.mainAgendaAfterparty}</span>
         </div>
       </div>
     </div>

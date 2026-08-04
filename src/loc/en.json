@@ -5,6 +5,11 @@
   "mainLocation": "Taipei, Taiwan",
   "mainCountdownDaysToGo": "days to go!",
 
+  "mainAgendaTitle": "Agenda",
+  "mainAgendaGuestArrive": "guest arrive",
+  "mainAgendaDinner": "Dinner",
+  "mainAgendaAfterparty": "Afterparty",
+
   "headerPhotos": "Photos",
   "headerInformation": "Information",
   "headerSurvey": "Survey",
