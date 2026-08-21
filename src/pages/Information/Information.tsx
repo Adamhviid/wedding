@@ -56,6 +56,16 @@ function Information() {
               </a>{" "}
               {t.infoLinkHalalDesc}
             </li>
+            <li>
+              <a
+                href="https://taiwantrailsandtales.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.infoLinkTrailsLabel}
+              </a>{" "}
+              {t.infoLinkTrailsDesc}
+            </li>
           </ul>
         </div>
 
